@@ -1,0 +1,34 @@
+body{
+    background-color: #000;
+}
+
+/* general CSS */
+#title{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+}
+#flowchart{
+    height: 100%;
+}
+
+.hover_event{
+    cursor: pointer;
+}
+
+
+/* media css */
+@media only screen and (max-width: 480px) {
+    #title{
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    #flowchart{
+        position: absolute;
+        top: -100px;
+        height: 110%;
+    }
+}
