@@ -1,0 +1,5 @@
+
+
+function closeWindow(){
+    this.close();
+}
