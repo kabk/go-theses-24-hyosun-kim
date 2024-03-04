@@ -13,6 +13,7 @@ body {
 	-webkit-overflow-scrolling: touch;
 	overflow-x: scroll;
     color: #fff;
+    scroll-snap-type: x mandatory;
     /* width: 480px;
     height: 730px; */
 }

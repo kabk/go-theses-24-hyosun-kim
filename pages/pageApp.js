@@ -1,5 +1,3 @@
-
-
 function closeWindow(){
     this.close();
 }
