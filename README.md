@@ -7,10 +7,10 @@ However, we are currently witnessing a Renaissance of social connection through 
 
 Yet, various factors, including behavioral addiction, obsession with online self-presentation, and the absence of physical meetups, can impact the quality of relationships. Therefore, to achieve a deeper understanding of modern relationships, it is crucial to be more conscious about the entire journey of how we fall in love via a machine. 
 
-## Todo List
-- [x] upload at least **4 photos** on Tinder
+## Todo List to find love
+- [x] verify the **photo** on Tinder
+- [ ] upload at least **4 photos** on Tinder
 - [ ] upload at least **4 descriptions** on Tinder
 - [ ] upload at least **3 interests** on Tinder
-- [ ] verify the **active photo** on Tinder
 
 [^1]: Maslow's hierarchy (https://canadacollege.edu/dreamers/docs/Maslows-Hierarchy-of-Needs.pdf)
