@@ -55,16 +55,21 @@ circles.forEach(circle => {
 
 //////////////SUB PAGE//////////////
 const sections = Array.from(document.getElementsByTagName('section'));
-
-function closeWindow(){
-    this.close();
-}
-
-function showPopup(url) {
-    newwindow=window.open(url,'name','height=730,width=450,top=190,left=300');
-    if (window.focus){newwindow.focus()}
-}
+const icon_o = document.querySelector('.icon_o');
+const match_msg = document.querySelector('.match_msg');
 
 for (let i = 0; i < sections.length; i++) {
     sections[i].innerHTML += `<h5><-- ${i+1} --></h5>`;
 }
+function closeWindow(){
+    this.close();
+}
+function showPopup(url) {
+    newwindow=window.open(url,'name','height=730,width=450,top=190,left=300');
+    if (window.focus){newwindow.focus()}
+}
+icon_o. addEventListener('click', function(){
+    match_msg.classList.toggle('visibility_hidden');
+})
+
+
