@@ -109,6 +109,7 @@ function confetti() {
   container.style.height   = '0';
   container.style.overflow = 'visible';
   container.style.zIndex   = '9999';
+  container.classList = 'confetti_container';
 
   // Confetto constructor
   function Confetto(theme) {

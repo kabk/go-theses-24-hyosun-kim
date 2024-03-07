@@ -28,7 +28,8 @@ body {
 	overflow-x: scroll;
     color: #000;
     scroll-snap-type: x mandatory;
-    background-image: linear-gradient(to right, #FD297B , #FF655B);
+    /* background-image: linear-gradient(to right, #FD297B , #FF655B); */
+    background-image: linear-gradient(to right,  #E600FF, #FD297B);
 }
 section {
 	padding: 3rem;
@@ -98,6 +99,9 @@ p {
 
 .visibility_hidden{
     visibility: hidden;
+}
+.display_none{
+    display: none;
 }
 .go_page{
     cursor: pointer;

@@ -59,21 +59,23 @@ const icon_o = document.querySelector('.icon_o');
 const match_msg = document.querySelector('.match_msg');
 const page_icons = document.getElementsByClassName('page_icon');
 
+
 sections.forEach((section, index) => {
     section.setAttribute('id',`section${index+1}`);
     section.innerHTML += `<h5><a class="go_page prev_page" href="#section${index}"><--</a> ${index+1} <a class="go_page next_page" href="#section${index+2}">--></a></h5>`;
 })
 
-
 function closeWindow(){
     this.close();
 }
+
 function showPopup(url) {
     newwindow=window.open(url,'name','height=730,width=450,top=190,left=300');
     if (window.focus){newwindow.focus()}
 }
-icon_o. addEventListener('click', function(){
-    match_msg.classList.toggle('visibility_hidden');
+
+icon_o. addEventListener('click', function(e){
+    match_msg.classList.toggle('visibility_hidden');    
 })
 
 
