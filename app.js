@@ -1,6 +1,8 @@
-const st11s = Array.from(document.getElementsByClassName("st11"));
+const st11s = Array.from(document.getElementsByClassName('st11'));
 const circles = Array.from(document.getElementsByTagName('circle'));
+const texts = Array.from(document.getElementsByTagName('text'))
 
+console.log(texts);
 
 st11s.forEach(st11 => {
     // console.log(st12.parentElement.parentElement)
@@ -24,6 +26,13 @@ st11s.forEach(st11 => {
             }
         })
     })
+})
+
+texts.forEach(text => {
+    console.log(text.nextSibling.innerHTML);
+    // text.addEventListener('mouseover', function(e){
+        
+    // })
 })
 
 circles.forEach(circle => {
