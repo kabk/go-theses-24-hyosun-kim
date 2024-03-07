@@ -57,10 +57,14 @@ circles.forEach(circle => {
 const sections = Array.from(document.getElementsByTagName('section'));
 const icon_o = document.querySelector('.icon_o');
 const match_msg = document.querySelector('.match_msg');
+const page_icons = document.getElementsByClassName('page_icon');
 
-for (let i = 0; i < sections.length; i++) {
-    sections[i].innerHTML += `<h5><-- ${i+1} --></h5>`;
-}
+sections.forEach((section, index) => {
+    section.setAttribute('id',`section${index+1}`);
+    section.innerHTML += `<h5><a class="go_page prev_page" href="#section${index}"><--</a> ${index+1} <a class="go_page next_page" href="#section${index+2}">--></a></h5>`;
+})
+
+
 function closeWindow(){
     this.close();
 }
