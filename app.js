@@ -60,7 +60,7 @@ const match_msg = document.querySelector('.match_msg');
 const page_icons = document.getElementsByClassName('page_icon');
 const swipe_indicators = Array.from(document.getElementsByClassName('swipe_indicator'));
 const swipe_bubbles = Array.from(document.getElementsByClassName('swipe_bubble'));
-const intervalConfetti = setInterval(confetti(), 1000);
+// const intervalConfetti = setInterval(confetti(), 1000);
 
 
 sections.forEach((section, index) => {
@@ -82,13 +82,13 @@ icon_o. addEventListener('click', function(e){
     // e.preventDefault();
     // console.log(icon_o.attributes.onclick.nodeValue);
     
-    if(match_msg.classList.contains('visibility_hidden')){
-        // const confetti_containers = Array.from(document.querySelector('.confetti_container'));
-        // console.log(confetti_containers);
+    // if(match_msg.classList.contains('visibility_hidden')){
+    //     // const confetti_containers = Array.from(document.querySelector('.confetti_container'));
+    //     // console.log(confetti_containers);
         
-    }else{
-        // icon_o.attributes.onclick.nodeValue = "confetti()";
-    }
+    // }else{
+    //     // icon_o.attributes.onclick.nodeValue = "confetti()";
+    // }
 })
 
 
