@@ -67,11 +67,15 @@ h5{
     font-size: 25px;
     margin-left: -50px;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 p {
     width: 100%;
     height: 400px;
     position: relative;
-    top: calc(5rem + 4vw);
+    top: calc(5rem + 3vw);
     padding: 1rem;
     /* border: 1px solid #ddd; */
     border-radius: 1rem;
@@ -110,4 +114,8 @@ p {
 }
 .go_page:hover{
     color: #fff;
+}
+.footnote{
+    color: white;
+    font-size: 12px;
 }
