@@ -19,7 +19,8 @@
 body {
 	overflow-y: hidden;
     /* scrollbar-color: #FD297B #FF655B; */
-    scrollbar-color: #fff #E600FF;
+    /* scrollbar-color: #fff #E600FF; */
+    height: 100vw;
 }
 .slider {
 	font-family: sans-serif;
@@ -53,7 +54,7 @@ h1	{
 }
 h2{
     position: fixed;
-    top: calc(5rem + 4vw);
+    top: calc(5rem + 2vw);
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -78,7 +79,7 @@ p {
     width: 100%;
     height: 400px;
     position: relative;
-    top: calc(5rem + 5vw);
+    top: calc(5rem + 3vw);
     padding: 1rem;
     /* border: 1px solid #ddd; */
     border-radius: 1rem;
