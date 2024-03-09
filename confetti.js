@@ -1,4 +1,16 @@
 'use strict';
+const icon_o = document.querySelector('.icon_o');
+
+icon_o. addEventListener('click', function(e){
+  match_msg.classList.toggle('visibility_hidden'); 
+  if(match_msg.classList.contains('visibility_hidden')){
+    const confetti_container = document.querySelector('.confetti_container');
+    confetti_container.remove();
+  }else{
+    confetti();
+  }
+})
+
 
 function confetti() {
   // Globals
@@ -108,7 +120,7 @@ function confetti() {
   container.style.width    = '100%';
   container.style.height   = '0';
   container.style.overflow = 'visible';
-  container.style.zIndex   = '9999';
+  container.style.zIndex   = '999';
   container.classList = 'confetti_container';
 
   // Confetto constructor

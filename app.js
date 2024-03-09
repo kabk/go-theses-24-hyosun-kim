@@ -55,17 +55,24 @@ circles.forEach(circle => {
 
 //////////////SUB PAGE//////////////
 const sections = Array.from(document.getElementsByTagName('section'));
-const icon_o = document.querySelector('.icon_o');
+// const icon_o = document.querySelector('.icon_o');
 const match_msg = document.querySelector('.match_msg');
 const page_icons = document.getElementsByClassName('page_icon');
 const swipe_indicators = Array.from(document.getElementsByClassName('swipe_indicator'));
 const swipe_bubbles = Array.from(document.getElementsByClassName('swipe_bubble'));
-// const intervalConfetti = setInterval(confetti(), 1000);
+
 
 
 sections.forEach((section, index) => {
     section.setAttribute('id',`section${index+1}`);
-    section.innerHTML += `<h5><a class="go_page prev_page" href="#section${index}"><--</a> ${index+1}<a class="go_page next_page" href="#section${index+2}">--></a></h5>`;
+    section.innerHTML += `
+    <h5>
+        <a class="go_page prev_page" href="#section${index}"><--</a>
+        <div class="tooltip">${index+1}
+            <span class="tooltiptext">if you like, <br />swipe👆</span>
+        </div>
+        <a class="go_page next_page" href="#section${index+2}">--></a>
+    </h5>`;
 })
 
 function closeWindow(){
@@ -76,20 +83,6 @@ function showPopup(url) {
     newwindow=window.open(url,'name','height=730,width=450,top=150,left=300');
     if (window.focus){newwindow.focus()}
 }
-
-icon_o. addEventListener('click', function(e){
-    match_msg.classList.toggle('visibility_hidden');   
-    // e.preventDefault();
-    // console.log(icon_o.attributes.onclick.nodeValue);
-    
-    // if(match_msg.classList.contains('visibility_hidden')){
-    //     // const confetti_containers = Array.from(document.querySelector('.confetti_container'));
-    //     // console.log(confetti_containers);
-        
-    // }else{
-    //     // icon_o.attributes.onclick.nodeValue = "confetti()";
-    // }
-})
 
 
 

@@ -18,7 +18,8 @@
 
 body {
 	overflow-y: hidden;
-    scrollbar-color: #FD297B #FF655B;
+    /* scrollbar-color: #FD297B #FF655B; */
+    scrollbar-color: #fff #E600FF;
 }
 .slider {
 	font-family: sans-serif;
@@ -29,7 +30,7 @@ body {
     color: #000;
     scroll-snap-type: x mandatory;
     /* background-image: linear-gradient(to right, #FD297B , #FF655B); */
-    background-image: linear-gradient(to right,  #E600FF, #FD297B);
+    background-image: linear-gradient(to bottom,  #E600FF, #fff);
 }
 section {
 	padding: 3rem;
@@ -44,14 +45,15 @@ h1	{
     text-align: center;
     margin: 0 auto;
 	width: 100%;
-    font-family: "Chalet";
+    /* font-family: "Chalet"; */
+    font-family: "Bianzhidai";
 	font-size: calc(1rem + 5vw);
     z-index: 10;
     color: #fff;
 }
 h2{
     position: fixed;
-    top: calc(5rem + 2vw);
+    top: calc(5rem + 4vw);
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -66,6 +68,7 @@ h5{
     font-family: "MisterPixel";
     font-size: 25px;
     margin-left: -50px;
+    z-index: 1000;
 }
 a{
     text-decoration: none;
@@ -75,7 +78,7 @@ p {
     width: 100%;
     height: 400px;
     position: relative;
-    top: calc(5rem + 3vw);
+    top: calc(5rem + 5vw);
     padding: 1rem;
     /* border: 1px solid #ddd; */
     border-radius: 1rem;
@@ -85,6 +88,7 @@ p {
     z-index: 10;
     width: 100px;
     cursor: pointer;
+    z-index: 1000;
 }
 .page_icon:hover {
     transform: scale(1.2);
@@ -117,5 +121,41 @@ p {
 }
 .footnote{
     color: white;
-    font-size: 12px;
+    font-size: 13px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    opacity: 0;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 15px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 140%;
+    left: 50%;
+    margin-left: -65px;
+    transition: opacity 0.5s;
+}
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }
