@@ -84,5 +84,7 @@ function showPopup(url) {
     if (window.focus){newwindow.focus()}
 }
 
-
+function figureOpen(){
+    window.open("figure.html", "", 'height=730,width=450, top=150,left=800');
+}
 

@@ -21,6 +21,7 @@ body {
     /* scrollbar-color: #FD297B #FF655B; */
     /* scrollbar-color: #fff #E600FF; */
     height: 100vw;
+    text-wrap: pretty;
 }
 .slider {
 	font-family: sans-serif;
@@ -46,7 +47,6 @@ h1	{
     text-align: center;
     margin: 0 auto;
 	width: 100%;
-    /* font-family: "Chalet"; */
     font-family: "Bianzhidai";
 	font-size: calc(1rem + 5vw);
     z-index: 10;
@@ -125,6 +125,9 @@ p{
     color: white;
     font-size: 13px;
 }
+.footnote_figure:hover{
+    color: yellow;
+}
 
 .tooltip {
     position: relative;
@@ -161,15 +164,70 @@ p{
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
+.figure_link{
+    cursor: pointer;
+}
+.figure_link:hover{
+    color: yellow;
+}
+.swipe_img{
+    width: 100%;
+    position: relative;
+    top: calc(5rem + 4vw);
+}
+.swipe_img_text{
+    font-family: "Bianzhidai";
+    position: relative;
+    top: calc(5rem + 5vw);
+    font-size: 1.3rem;
+    text-align: center;
+}
+.figure_text{
+    font-size: 1rem;
+    position: relative;
+    top: calc(5rem + 5vw);
+    left: 50%;
+    margin-left: -40px;
+}
+.mechanism_img2{
+    right:  calc(2rem - 3vw);
+}
 
 @media (min-width: 481px) {
     h2{
         top: calc(5rem + 5vw);
     }
     h5{
-        bottom: calc(1rem + 4vw);
+        bottom: calc(1rem + 3vw);
     }
     p{
         top: calc(5rem + 7vw);
+    }
+    .swipe_img{
+        width: 354px;
+        top: calc(5rem + 8vw);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swipe_img_text{
+        top: calc(5rem + 10vw);
+    }
+    .figure_text{
+        font-size: 1rem;
+        position: relative;
+        top: calc(5rem + 10vw);
+        left: 50%;
+    }
+    .mechanism_img{
+        width: 70%;
+        top: calc(5rem + 5vw);
+        margin-bottom: -5%;
+    }
+    .mechanism_img2{
+        width: 50%;
+        top: calc(5rem + 3vw);
+        right:  calc(2rem - 1vw);
+        margin-bottom: -10%;
     }
 }
