@@ -177,10 +177,14 @@ p{
 }
 .swipe_img_text{
     font-family: "Bianzhidai";
+    font-weight: 300;
     position: relative;
     top: calc(5rem + 5vw);
     font-size: 1.3rem;
     text-align: center;
+}
+.swipe_img_text_small{
+    font-size: 1rem;
 }
 .figure_text{
     font-size: 1rem;

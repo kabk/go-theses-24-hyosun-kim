@@ -16,9 +16,6 @@ body{
 
 /* media css */
 @media only screen and (max-width: 480px) {
-    picture{
-        height: 100vw;
-    }
     #title{
         position: relative;
         top: 0;
