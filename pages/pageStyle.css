@@ -188,6 +188,7 @@ p{
     top: calc(5rem + 5vw);
     left: 50%;
     margin-left: -40px;
+    z-index: 2000;
 }
 .mechanism_img2{
     right:  calc(2rem - 3vw);
