@@ -52,6 +52,14 @@ h1	{
     z-index: 10;
     color: #fff;
 }
+.acknowledgements_title{
+    font-size: 1.8rem;
+}
+.acknowledgements_name{
+    font-family: "MisterPixel";
+    font-size: 1.4rem;
+    color: #fff;
+}
 h2{
     position: fixed;
     top: calc(5rem + 3vw);

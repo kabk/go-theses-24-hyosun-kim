@@ -2,7 +2,7 @@ const st11s = Array.from(document.getElementsByClassName('st11'));
 const circles = Array.from(document.getElementsByTagName('circle'));
 const texts = Array.from(document.getElementsByTagName('text'));
 const paths = Array.from(document.getElementsByTagName('path'));
-
+const thankstos = Array.from(document.getElementsByClassName('thanksto'));
 
 
 st11s.forEach(st11 => {
@@ -51,6 +51,22 @@ circles.forEach(circle => {
             path_btn.classList.add('st18');
         })
     }
+})
+
+thankstos.forEach(st11 => {
+    st11.addEventListener('mouseover', function(e){
+        e.target.classList.remove('st16');
+        e.target.classList.add('st18');
+        e.target.classList.remove('st12');
+        e.target.classList.add('st19');
+    });
+
+    st11.addEventListener('mouseout', function(e){
+        e.target.classList.remove('st18');
+        e.target.classList.add('st16');
+        e.target.classList.remove('st19');
+        e.target.classList.add('st12');
+    })
 })
 
 //////////////SUB PAGE//////////////
