@@ -3,6 +3,9 @@ const circles = Array.from(document.getElementsByTagName('circle'));
 const texts = Array.from(document.getElementsByTagName('text'));
 const paths = Array.from(document.getElementsByTagName('path'));
 const thankstos = Array.from(document.getElementsByClassName('thanksto'));
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 
 st11s.forEach(st11 => {

@@ -21,6 +21,7 @@ body {
     /* scrollbar-color: #FD297B #FF655B; */
     /* scrollbar-color: #fff #E600FF; */
     height: 100vw;
+    
     text-wrap: pretty;
 }
 .slider {
@@ -38,6 +39,7 @@ section {
 	padding: 3rem;
 	min-width: 100vw;
 	height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 	scroll-snap-align: start;
 	position: relative;
 }
