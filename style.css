@@ -1,5 +1,8 @@
 body{
     background-color: #000;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-y: hidden;
 }
 #title{
     position: fixed;
@@ -7,7 +10,8 @@ body{
     width: 100%;
 }
 #flowchart{
-    height: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .hover_event {
@@ -16,6 +20,10 @@ body{
 
 /* media css */
 @media only screen and (max-width: 480px) {
+    #flowchart{
+        height: 95;
+        height: calc(var(--vh, 1vh) * 100);
+    }
     #title{
         position: relative;
         top: 0;
